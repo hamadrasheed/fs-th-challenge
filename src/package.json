@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.5",
+        "tailwindcss": "^3.3.2",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-react": "^4.0.0",
+        "autoprefixer": "^10.4.14",
+        "classnames": "^2.3.2",
+        "google-map-react": "^2.2.1",
+        "google-maps": "^4.3.3",
+        "moment": "^2.29.4",
+        "nanoid": "^4.0.2",
+        "postcss": "^8.4.23",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-flatpickr": "^3.10.13",
+        "react-hook-form": "^7.43.9",
+        "react-icons": "^4.8.0",
+        "react-number-format": "^5.2.1",
+        "react-router-dom": "^6.11.1",
+        "react-select": "^5.7.3",
+        "react-transition-group": "^4.4.5",
+        "sass": "^1.62.1",
+        "swiper": "^9.3.2",
+        "zustand": "^4.3.8"
+    }
+}
