@@ -1,0 +1,691 @@
+{
+	"info": {
+		"_postman_id": "cbde6e7c-949f-47ec-b2fe-9902134f5103",
+		"name": "Innoscripta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24709673"
+	},
+	"item": [
+		{
+			"name": "NewsHub",
+			"item": [
+				{
+					"name": "News",
+					"item": [
+						{
+							"name": "Sync",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/sync?start_date=2023-05-12&end_date=2023-05-14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"sync"
+									],
+									"query": [
+										{
+											"key": "start_date",
+											"value": "2023-05-12"
+										},
+										{
+											"key": "end_date",
+											"value": "2023-05-14"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "18|CHqJVUh4MhKzxZFbxqm6Pq0UY673u1v4W1iTuXxb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Hero",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/hero",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"hero"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Feeds",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/feeds",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"feeds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Menu",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "17|QucBDrVumO9iiReecjYIHWXyXXXHTEmK07YLG3lA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/menu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"menu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Prefered News Category",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "18|CHqJVUh4MhKzxZFbxqm6Pq0UY673u1v4W1iTuXxb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/prefered-category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"prefered-category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Prefered News Feeds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "18|CHqJVUh4MhKzxZFbxqm6Pq0UY673u1v4W1iTuXxb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/prefered-feeds?category=general",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"prefered-feeds"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "general"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "18|CHqJVUh4MhKzxZFbxqm6Pq0UY673u1v4W1iTuXxb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/news/detail/egypt-ignores-us-requests-to-block-russian-military-flights-927",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"detail",
+										"egypt-ignores-us-requests-to-block-russian-military-flights-927"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Edit Profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "17|QucBDrVumO9iiReecjYIHWXyXXXHTEmK07YLG3lA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/edit-profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"edit-profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|zmlqBL25r9ngk57BhU8vbHi739mtMAyIW5y1hjBW",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/check",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"check"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"annon\",\n    \"password\": \"secret\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Fiqy Ainuzzaqy\",\n    \"username\": \"fq_whysoserious\",\n    \"email\": \"fiqy_a@icloud.com\",\n    \"password\": \"Fiqy2112\",\n    \"password_confirmation\": \"Fiqy2112\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|3A2RusAxFUCUcyg7Rl7iX2nEntI94rcfEj8xAZ2j",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forgot Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|3A2RusAxFUCUcyg7Rl7iX2nEntI94rcfEj8xAZ2j",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"annon@example.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/forgot-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"forgot-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|3A2RusAxFUCUcyg7Rl7iX2nEntI94rcfEj8xAZ2j",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"token\":\"25bd288aa01843feb11f2aee8fcc8d23773ee02be72a6c814c8a513bbefebd00\",\n    \"email\":\"annon@example.com\",\n    \"password\":\"qwertyuiop\",\n    \"password_confirmation\":\"qwertyuiop\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/reset-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"reset-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|zmlqBL25r9ngk57BhU8vbHi739mtMAyIW5y1hjBW",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"password\": \"secret\",\n    \"new_password\": \"12345678\",\n    \"password_confirmation\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/change-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"change-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "17|QucBDrVumO9iiReecjYIHWXyXXXHTEmK07YLG3lA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Fiqy Ainuzzaqy\",\n    \"phone\": \"+6281356598237\",\n    \"gender\": \"male\",\n    \"birthdate\": \"1997-10-15\",\n    \"address\": \"Jl. Hikmat 50A, Betro, Sedati, Sidoarjo, East Java, Indonesia 61253\",\n    \"preferences\": {\n        \"category\": \"business,technology\",\n        \"source\": \"\",\n        \"author\": \"\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/v1/auth/update-profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"update-profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Utils",
+					"item": [
+						{
+							"name": "Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/utils/news/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"utils",
+										"news",
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Author",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/utils/news/author",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"utils",
+										"news",
+										"author"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Source",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/utils/news/source",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"utils",
+										"news",
+										"source"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Gender",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/utils/gender",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"utils",
+										"gender"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

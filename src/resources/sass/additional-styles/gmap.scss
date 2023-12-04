@@ -1,0 +1,122 @@
+.gmap {
+  @apply relative w-full max-w-full h-[200px] rounded-lg bg-white/70 border border-solid border-[#dee2e6];
+}
+
+.gmap img {
+  max-width: none !important;
+}
+
+.gm-style .gm-style-iw h3 span {
+  font-size: inherit;
+  color: #202e31;
+  font-family: inherit;
+}
+
+#map-overlay {
+  position: relative;
+  padding: 100px 0;
+}
+
+#map-overlay .gmap {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.gm-style-iw {
+  width: 350px !important;
+  top: 15px;
+  left: 22px;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border: 1px solid rgba(44, 120, 255, 0.6);
+  border-radius: 2px 2px 10px 10px;
+}
+
+.gm-style-iw > div:first-child {
+  max-width: 350px !important;
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+#iw-container {
+  margin-bottom: 10px;
+}
+
+#iw-container .iw-title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
+  color: #202e31;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #013399;
+  color: white;
+  margin: 0;
+  border-radius: 2px 2px 0 0;
+}
+
+#iw-container .iw-content {
+  font-size: 13px;
+  color: #202e31;
+  line-height: 18px;
+  font-weight: 400;
+  margin-right: 1px;
+  padding: 15px 5px 20px 15px;
+  max-height: 140px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.iw-content a {
+  color: #013399;
+  text-decoration: none;
+}
+
+.iw-content img {
+  float: right;
+  margin: 0 5px 5px 10px;
+  width: 35%;
+}
+
+.iw-content p {
+  font-size: 12px;
+  color: #202e31;
+}
+
+.iw-subTitle {
+  font-size: 16px;
+  color: #202e31;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.iw-bottom-gradient {
+  position: absolute;
+  width: 326px;
+  height: 25px;
+  bottom: 10px;
+  right: 18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
